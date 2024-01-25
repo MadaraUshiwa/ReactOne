@@ -1,0 +1,146 @@
+.plan-test{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-plan {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-plan div {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 125px;
+}
+
+.card-titre h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: hsl(213, 100%, 16%);
+  text-align: left;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.card-titre h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(300, 1%, 66%);
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.card-period {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: hsl(225, 100%, 97%);
+  & span {
+    font-size: 18px;
+    font-weight: bold;
+    color: hsl(240, 3%, 82%);
+  }
+}
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 62px;
+  height: 35px;
+}
+
+.switch input {
+  opacity: 1;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background: #fff;
+  transition: 0.4s;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.9em;
+  width: 1.9em;
+  border-radius: 16px;
+  left: 1.2px;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px #999999;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: hsl(213, 100%, 16%);
+  border: 1px solid transparent;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+}
+
+.card-button-change {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: end; */
+  /* height: 100px; */
+}
+
+.button-next {
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid hsl(300, 1%, 66%);
+  /* margin-top: 20px; */
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(300, 1%, 66%);
+  background-color: hsl(213, 100%, 16%);
+  color: white;
+  cursor: pointer;
+  float: right;
+  /* margin-top: 60px; */
+}
+
+.button-back {
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: hsl(300, 1%, 66%);
+  background-color: white;
+  color: hsl(213, 100%, 16%);
+  cursor: pointer;
+  float: left;
+}
+
+.text-active {
+    color: hsl(216, 80%, 16%) !important;
+}
+
+.text-inactive {
+    color: hsl(300, 1%, 66%) !important; /* ou une autre couleur que vous souhaitez pour l'état inactif */
+}

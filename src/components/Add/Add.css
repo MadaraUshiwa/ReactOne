@@ -1,0 +1,53 @@
+.add-principale{
+    border: 1px solid hsla(300, 2%, 80%, 0.679);
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.card-button-change {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 100px;
+  }
+
+
+#add-titre{
+    margin: 0;
+}
+
+#add-sub{
+    margin: 0;
+}
+
+#add-input{
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(190, 184, 184, 0.163);
+    margin-left: 10px;
+}
+
+.testx{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.add-price{
+    margin-right: 20px;
+}
+
+.card-test{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
