@@ -50,6 +50,7 @@
   width: 85%;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 9%;
 }
 
 .summary-content{
@@ -60,6 +61,7 @@
 
 .summary-button-change{
   text-decoration: underline;
+  color:hsl(230, 3%, 63%);
 }
 
 .summary-add{
@@ -69,3 +71,17 @@
   padding-top: 5%;
 }
 
+.summary-price-color{
+  color: hsl(215, 93%, 27%);
+  font-weight: bold;
+}
+
+.summary-price-color-total{
+  color: hsl(215, 93%, 27%);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.summary-text{
+  color: hsl(230, 3%, 63%);
+}
